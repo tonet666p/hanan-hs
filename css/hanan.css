@@ -5,3 +5,7 @@
 .center {
     text-align: center;
 }
+.carousel-inner {
+	background-color: #0062c3;
+	color: white;
+}
