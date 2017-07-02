@@ -1,10 +1,14 @@
-.jumbotrom {
+.jum-carousel{
     padding-top: 71px;
-    padding-bottom: 48px;
+    padding-bottom: 70px;
 }
-.center {
+.align-center {
     text-align: center;
 }
+.align-right {
+   text-align: right;
+}
+
 .navbar-header img{
 	padding-top: 16px;
 	padding-left: 20px;
@@ -26,10 +30,12 @@
 	width: 100%;
 }
 .carousel-inner .col-md-6 .description{
-	padding: 30% 150px;
+	padding: 30% 0 0 45%;
+	text-align: right;
 }
 @media (max-width: 950px) {
 	.carousel-inner .col-md-6 .description{
+		text-align: center;
 		padding: 30px 0 0 0;
 	}
 	.carousel-inner .col-md-6 img{
