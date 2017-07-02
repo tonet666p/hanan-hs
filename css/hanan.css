@@ -1,12 +1,16 @@
 .jum-carousel{
     padding-top: 71px;
-    padding-bottom: 70px;
 }
-.align-center {
+.center {
     text-align: center;
 }
-.align-right {
+.right {
    text-align: right;
+}
+.plans{
+	padding-top: 40px;
+	background-color: #0092E3;
+	color: white;
 }
 
 .navbar-header img{
