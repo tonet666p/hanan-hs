@@ -1,11 +1,34 @@
 .jumbotrom {
-    padding-top: 51px;
+    padding-top: 71px;
     padding-bottom: 48px;
 }
 .center {
     text-align: center;
 }
+.navbar-header img{
+	padding-top: 16px;
+	padding-left: 20px;
+}
+
 .carousel-inner {
-	background-color: #0062c3;
-	color: white;
+	/*background-color: #0062c3;
+	color: white;*/
+	height: 90vh;
+}
+.carousel-inner .col-md-6 img{
+	padding-top: 40px;
+}
+.carousel-inner .col-md-6 .description{
+	padding: 30% 150px;
+}
+.carousel-indicators li{
+	/*background-color: #333;*/
+	border: 1px solid #444;
+}
+.carousel-indicators .active{
+	background-color: #333;
+	/*border: 1px solid #444;*/
+}
+.carousel-control{
+	color: #444;
 }

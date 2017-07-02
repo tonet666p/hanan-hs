@@ -1,0 +1,14 @@
+.jumbotrom {
+    padding-top: 51px;
+    padding-bottom: 48px;
+}
+.center {
+    text-align: center;
+}
+.carousel-inner {
+	background-color: #0062c3;
+	color: white;
+}
+.navbar-header img{
+	padding-top: 16px;
+}
