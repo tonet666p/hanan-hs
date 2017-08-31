@@ -19,7 +19,7 @@
 	padding-right: 10px;
 }
 .navbar .form-control{
-	width: 150px;
+	width: 120px;
 }
 
 .carousel-inner {
@@ -28,7 +28,7 @@
 	height: 90vh;
 }
 .carousel-inner .col-md-6 img{
-	width: 400px;
+	width: 350px;
 }
 
 .carousel-inner .col-md-6 .description{
@@ -40,7 +40,6 @@
 
 .carousel-inner .item{
 	height: 90vh;
-
 }
 .carousel-inner .container{
 	height: 90vh;
@@ -52,7 +51,7 @@
     vertical-align: middle;
 
 }
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
 	.carousel-inner .row{
 		display: table;
 	}
@@ -73,8 +72,22 @@
 	.carousel-inner .col-md-6 img{
 		padding-top: 0;
 		width: 50%;
-
+/*
 	}
+  .collapse{
+    display: none;
+  }
+  .navbar-toggle{
+    display:block;
+    float: right;
+  }
+  .navbar-fixed-top{
+    left: 0;
+    right: 0;
+  }
+  .navbar-header{
+    width: 100%;
+  }*/
 }
 .carousel-indicators li{
 	/*background-color: #333;*/

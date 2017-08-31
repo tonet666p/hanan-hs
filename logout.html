@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>mikrotik hotspot > logout</title>
+<title>hotspot > logout</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="expires" content="-1">
@@ -16,10 +16,10 @@ textarea,input,select {
 }
 
 .tabula{
- 
-border-width: 1px; 
-border-collapse: collapse; 
-border-color: #c1c1c1; 
+
+border-width: 1px;
+border-collapse: collapse;
+border-color: #c1c1c1;
 background-color: transparent;
 font-family: verdana;
 font-size: 11px;
@@ -53,19 +53,19 @@ td { font-size: 12px; padding: 4px;}
 <tr>
 <td align="center" valign="middle">
 <b>you have just logged out</b> <br><br>
-<table class="tabula" border="1">  
-<tr><td align="right">user name</td><td>$(username)</td></tr>
-<tr><td align="right">IP address</td><td>$(ip)</td></tr>
-<tr><td align="right">MAC address</td><td>$(mac)</td></tr>
-<tr><td align="right">session time</td><td>$(uptime)</td></tr>
+<table class="tabula" border="1">
+<tr><td align="right">Usuario</td><td>$(username)</td></tr>
+<tr><td align="right">Dirección IP</td><td>$(ip)</td></tr>
+<tr><td align="right">Dirección MAC</td><td>$(mac)</td></tr>
+<tr><td align="right">Tiempo de sesión</td><td>$(uptime)</td></tr>
 $(if session-time-left)
-<tr><td align="right">time left</td><td>$(session-time-left)</td></tr>
+<tr><td align="right">Tiempo restante</td><td>$(session-time-left)</td></tr>
 $(endif)
-<tr><td align="right">bytes up/down:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+<tr><td align="right">Bytes up/down:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
 </table>
 <br>
 <form action="$(link-login)" name="login" onSubmit="return openLogin()">
-<input type="submit" value="log in">
+<input type="submit" value="Reconectarse">
 </form>
 </td>
 </table>

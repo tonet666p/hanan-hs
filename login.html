@@ -7,9 +7,9 @@
     <meta http-equiv="expires" content="-1" />
     <link rel="stylesheet" href="css/bootstrap.css" >
     <link rel="stylesheet" href="css/hanan.css" >
-    
+
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
@@ -76,24 +76,23 @@
             </div>
 
             <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
-            
-            
-             
+
+
+
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#">Inicio</a></li>
-				<li><a href="#">Películas</a></li>
+				<li><a href="#" id="iptv">IP TV</a></li>
 				<li class="dropdown">
 				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Más
 				<span class="caret"></span></a>
 				<ul class="dropdown-menu">
-					<li><a href="#">Área de clientes</a></li>
-					<li><a href="#">Lugares de pago</a></li>
+					<li><a href="http://172.16.0.1/cliente/">Área de clientes</a></li>
+					<li><a href="http://172.16.0.1/cliente/">Lugares de pago</a></li>
 				</ul>
 				</li>
 			</ul>
 
-            
-            
+
+
                 <form class="navbar-form navbar-right" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
                     <input type="hidden" name="dst" value="$(link-orig)" />
 					<input type="hidden" name="popup" value="true" />
@@ -104,14 +103,14 @@
                         <input name="password" placeholder="Contraseña" class="form-control" type="password">
                     </div>
                     <input type="submit" class="btn btn-primary" value="Iniciar Sesión" />
-                    
+
                 </form>
-                
-  
-  
-  
-  
-  
+
+
+
+
+
+
             </div><!--/.navbar-collapse -->
         </div>
     </nav>
@@ -129,7 +128,7 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-            
+
 		        <div class="item active">
                     <div class="container">
 						<div class="row">
@@ -151,16 +150,17 @@
 						</div>
 					</div>
                 </div>
-                
+
                 <div class="item">
                     <div class="container">
 						<div class="row">
 						    <div class="col-md-6">
 						    	<div class="description">
-								    <h2>Prueba el servicio</h2>
+								    <h2>Pruebe el servicio</h2>
 								    <p>
 								    	Le damos la opción de probar la calidad de nuestro acceso a
-								    	a Internet, solicita DOS SEMANAS GRATIS!! de acceso ILIMITADO.
+								    	a Internet, consulte las condiciones necesarias y solicite
+								    	DOS SEMANAS GRATIS!! de acceso ILIMITADO.
 								    </p>
 						        </div>
 						    </div>
@@ -172,7 +172,7 @@
 						</div>
 					</div>
                 </div>
-            
+
                 <div class="item">
                     <div class="container">
 						<div class="row">
@@ -214,7 +214,7 @@
 						</div>
 					</div>
                 </div>
-            	
+
             	<div class="item">
                     <div class="container">
 						<div class="row">
@@ -235,7 +235,7 @@
 						</div>
 					</div>
                 </div>
-                
+
                 <div class="item">
                     <div class="container">
 						<div class="row">
@@ -257,7 +257,7 @@
 						</div>
 					</div>
                 </div>
-                
+
             </div>
 
             <!-- Left and right controls -->
@@ -336,7 +336,7 @@
     			<div class="span3"></div>
     			<div class="span6">
     				<b>Email:</b> soporte@hanantech.com -
-    				<b>Cel:</b> 951 876908 - 
+    				<b>Cel:</b> 951 876908 -
     				<b>Dirección:</b> Jr. Lima 718
     			</div>
     			<div class="span3"></div>
@@ -362,26 +362,13 @@
     </script>
     <script type="text/javascript">
     	$(function() {
-            $('#repPago').bind('click', function(e) {
-            	e.preventDefault();
-                $('#popup').bPopup({
-                    content:'iframe'
-                    , contentContainer:'.content'
-                    , loadUrl:'http://pagos.hanantech.com/'
-                });
-            });
-            $('#lugPago').bind('click', function(e) {
-            	e.preventDefault();
-                $('#popup').bPopup({
-                    content:'iframe'
-                    , contentContainer:'.content'
-                    , loadUrl:'http://red-tnt.com/como_pago.html'
-                });
+            $('#iptv').bind('click', function(e) {
+            	alert("Aun está en desarrollo.\n Pronto Lanzamiento.");
             });
             //$(if !chap-id)
             $('#buttonSubmit').click(function(){
-				document.login.submit();
-			});
+      				document.login.submit();
+      			});
 			//$(endif)
     	});
 	</script>
