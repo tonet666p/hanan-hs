@@ -72,6 +72,7 @@
 	.carousel-inner .col-md-6 img{
 		padding-top: 0;
 		width: 50%;
+	}
 /*
 	}
   .collapse{
@@ -99,4 +100,7 @@
 }
 .carousel-control{
 	color: #444;
+}
+ul, ol{
+	list-style-position: inside;
 }
